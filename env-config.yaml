@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+  namespace: default
+data:
+  POSTGRES_HOST: bandar.crlmizyczxik.eu-west-2.rds.amazonaws.com
+  POSTGRES_DB: postgres
+  AWS_BUCKET: test-project-042502959973
+  AWS_REGION: eu-west-2
+  AWS_PROFILE: default
+  URL: http://localhost:8100
