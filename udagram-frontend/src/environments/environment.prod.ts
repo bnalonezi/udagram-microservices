@@ -8,6 +8,7 @@ export const environment = {
   apiHost: 'http://ade88183e620f48c2ac84e4ce34fe0ae-697070081.eu-west-1.elb.amazonaws.com:8080/api/v0'
 };
 
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
