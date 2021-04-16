@@ -28,11 +28,11 @@ spec:
           periodSeconds: 3
         resources:
           requests:
-            memory: "1024Mi"
+            memory: "64Mi"
             cpu: "250m"
           limits:
-            memory: "2048Mi"
-            cpu: "500m"      
+            memory: "512Mi"
+            cpu: "250m"      
         env:
         - name: AWS_BUCKET
           valueFrom:
