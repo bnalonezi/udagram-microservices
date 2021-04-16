@@ -16,7 +16,7 @@ spec:
         api: external
     spec:
       containers:
-      - image: balenezi/udagram-frontend
+      - image: balenezi/udagram-frontend:latest
         name: frontend
         imagePullPolicy: Always
         ports:

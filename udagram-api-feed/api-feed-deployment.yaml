@@ -15,24 +15,16 @@ spec:
         service: api-feed
     spec:
       containers:
-      - image: balenezi/udagram-api-feed
+      - image: balenezi/udagram-api-feed:latest
         name: api-feed
         imagePullPolicy: Always  
-        ports:
-        - containerPort: 8080        
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8080
-          initialDelaySeconds: 30
-          periodSeconds: 3
         resources:
           requests:
-            memory: "64Mi"
+            memory: "1024Mi"
             cpu: "250m"
           limits:
-            memory: "512Mi"
-            cpu: "250m"      
+            memory: "2048Mi"
+            cpu: "500m"      
         env:
         - name: AWS_BUCKET
           valueFrom:

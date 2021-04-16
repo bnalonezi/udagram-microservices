@@ -9,4 +9,4 @@ data:
   AWS_BUCKET: test-project-042502959973
   AWS_REGION: eu-west-2
   AWS_PROFILE: default
-  URL: http://localhost:8100
+  URL: http://ad9b19140af6a4a9fb5b7442af037360-738123611.eu-west-1.elb.amazonaws.com:8100

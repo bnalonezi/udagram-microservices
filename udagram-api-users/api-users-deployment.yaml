@@ -15,24 +15,16 @@ spec:
         service: api-users
     spec:
       containers:
-      - image: balenezi/udagram-api-users
+      - image: balenezi/udagram-api-users:latest
         name: api-users 
         imagePullPolicy: Always
-        ports:
-        - containerPort: 8080
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 8080
-          initialDelaySeconds: 30
-          periodSeconds: 3        
         resources:
           requests:
-            memory: "64Mi"
+            memory: "1024Mi"
             cpu: "250m"
           limits:
-            memory: "512Mi"
-            cpu: "250m"      
+            memory: "2048Mi"
+            cpu: "500m"      
         env:
         - name: URL
           valueFrom:
